@@ -67,6 +67,16 @@ We need to install the following tools:
   sudo apt install gazebo11
   ```
   
-  
   ### INSTALL PX4-AUTOPILOT FIRMWARE
   
+  The PX4 source code is stored on Github in the PX4/PX4-Autopilot repository.To get the very latest ("main") version onto your computer, enter the           following command into a terminal:
+  ```
+  git clone https://github.com/PX4/PX4-Autopilot.git --recursive
+  ```
+  Run the ubuntu.sh with no arguments (in a bash shell) to install everything:
+  ```
+  bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
+  ```
+  
+  ### SETUP XRCE-DDS AGENT & CLIENT
+ 
