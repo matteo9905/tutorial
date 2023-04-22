@@ -19,6 +19,15 @@ In order to install ROS2 foxy we need to follow the following instructions:
   sudo apt update && sudo apt install curl -y
   sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
   ```
+  If curl command does not work, you need to install it.
   ```
   echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-       release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+  ```
+  Update the system:
+  ```
+  sudo apt update && sudo apt upgrade
+  ```
+  Desktop Install (Recommended): ROS, RViz, demos, tutorials.
+  ```
+  sudo apt install ros-foxy-desktop python3-argcomplete
   ```
