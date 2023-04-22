@@ -5,6 +5,7 @@ We need to install the following tools:
 - Install ROS2 foxy and Gazebo11
 * Install PX4-Autopilot firmware
 + Setup XRCE-DDS Agent & Client
++ Install QGroundControl
 
 ### INSTALL ROS2 FOXY and GAZEBO
   You can find all the above instruction at this URL https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
