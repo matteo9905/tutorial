@@ -38,3 +38,5 @@ In order to install ROS2 foxy we need to follow the following instructions:
   ```
   sudo apt install ros-foxy-desktop python3-argcomplete
   ```
+  If you want to check if ROS has been properly installed you can try launching two default nodes:a talker and a listener.
+  
