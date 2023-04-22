@@ -77,7 +77,24 @@ We need to install the following tools:
   ```
   bash ./PX4-Autopilot/Tools/setup/ubuntu.sh
   ```
-  
+  Then you need to reboot your PC.
+  After having rebooted you PC you can launch the following line on the terminal:
+  ```
+  make px4_sitl gazebo-classic
+  ```
+  The build system makes it very easy to build and start PX4 on SITL, launch a simulator, and connect them. The syntax (simplified) looks like this:
+  ```
+  make px4_sitl simulator[_vehicle-model]
+  ```
+  Where simulator is gz (for Gazebo), gazebo-classic, jmavsim or some other simulator, and vehicle-model is a particular vehicle type supported by that       simulator (Gazebo and jMAVSim only support multicopters at time of writing, while Gazebo Classic supports many different types.A number of examples are     shown below, and there are many more in the individual pages for each of the simulators:
+  1. Start Gazebo Classic with iris drone
+  ```
+  make px4_sitl gazebo-classic_iris
+  ```
+  2. Start Gazebo Classic with classic plane
+  ```
+  make px4_sitl gazebo-classic-classic_plane
+  ```
   ### SETUP XRCE-DDS AGENT & CLIENT
   PX4 uses XRCE-DDS middleware to allow uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics. This           provides a fast and reliable integration between PX4 and ROS 2, and makes it much easier for ROS 2 applications to get vehicle information and send         commands. You can find all the details at the following URL https://docs.px4.io/main/en/middleware/xrce_dds.html
   To setup and start the agent:
