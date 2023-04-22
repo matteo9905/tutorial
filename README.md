@@ -2,7 +2,7 @@
 ## PX4 TUTORIAL
 Before starting installing PX4-Autopilot firmware,we need to install ROS2 foxy and gazebo 11(It's suggested to use these versions by the PX4 dev team).
 We need to install the following tools:
-- Install ROS2 foxy
+- Install ROS2 foxy and Gazebo11
 * Install PX4-Autopilot firmware
 + Setup XRCE-DDS Agent & Client
 
@@ -36,7 +36,32 @@ We need to install the following tools:
   ```
   sudo apt install ros-foxy-desktop python3-argcomplete
   ```
+  Development tools: Compilers and other tools to build ROS packages
+   ```
+   sudo apt install ros-dev-tools
+   ```
+  Some Python dependencies must also be installed (using pip or apt):
+  ```
+  pip3 install --user -U empy pyros-genmsg setuptools
+  ```
   If you want to check if ROS has been properly installed you can try launching two default nodes:a talker and a listener.
+  First of all set up your environment by sourcing the following file.
+  ```
+  # Replace ".bash" with your shell if you're not using bash
+  # Possible values are: setup.bash, setup.sh, setup.zsh
+  source /opt/ros/foxy/setup.bash
+  ```
+  Run the C++ talker:
+  ```
+  ros2 run demo_nodes_cpp talker
+  ```
+  Open another terminal,source it and run the listener:
+  ```
+  source /opt/ros/foxy/setup.bash
+  ros2 run demo_nodes_py listener
+  ```
+  If these two simple nodes work, it means ROS has been properly installed.
+  
   
   ### INSTALL PX4-AUTOPILOT FIRMWARE
   
