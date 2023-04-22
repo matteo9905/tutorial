@@ -93,7 +93,7 @@ We need to install the following tools:
   ```
   2. Start Gazebo Classic with classic plane
   ```
-  make px4_sitl gazebo-classic-classic_plane
+  make px4_sitl gazebo-classic_classic_plane
   ```
   ### SETUP XRCE-DDS AGENT & CLIENT
   PX4 uses XRCE-DDS middleware to allow uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics. This           provides a fast and reliable integration between PX4 and ROS 2, and makes it much easier for ROS 2 applications to get vehicle information and send         commands. You can find all the details at the following URL https://docs.px4.io/main/en/middleware/xrce_dds.html
