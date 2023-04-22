@@ -63,7 +63,7 @@ To setup ROS 2 for use with PX4 you will need to:
   ```
   If these two simple nodes work, it means ROS has been properly installed.
   
-  Then install the GAZEBO:
+  Then install GAZEBO:
   ```
   sudo apt install gazebo11
   ```
