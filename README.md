@@ -6,8 +6,6 @@ We need to install the following tools:
 * Install PX4-Autopilot firmware
 + Setup XRCE-DDS Agent & Client
 
-
-In order to install ROS2 foxy we need to follow the following instructions:
 ### INSTALL ROS2 FOXY
   You can find all the above instruction at this URL https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
   ```
@@ -39,4 +37,6 @@ In order to install ROS2 foxy we need to follow the following instructions:
   sudo apt install ros-foxy-desktop python3-argcomplete
   ```
   If you want to check if ROS has been properly installed you can try launching two default nodes:a talker and a listener.
+  
+  ### INSTALL PX4-AUTOPILOT FIRMWARE
   
