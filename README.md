@@ -8,7 +8,7 @@ We need to install the following tools:
 + Install QGroundControl
 
 ### INSTALL ROS2 FOXY and GAZEBO
-  You can find all the above instruction at this URL https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
+  You can find all the above instruction at this URL:https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
   ```
 # locale  # check for UTF-8
   sudo apt update && sudo apt install locales
@@ -97,7 +97,7 @@ We need to install the following tools:
   make px4_sitl gazebo-classic_classic_plane
   ```
   ### SETUP XRCE-DDS AGENT & CLIENT
-  PX4 uses XRCE-DDS middleware to allow uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics. This           provides a fast and reliable integration between PX4 and ROS 2, and makes it much easier for ROS 2 applications to get vehicle information and send         commands. You can find all the details at the following URL https://docs.px4.io/main/en/middleware/xrce_dds.html
+  PX4 uses XRCE-DDS middleware to allow uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics. This           provides a fast and reliable integration between PX4 and ROS 2, and makes it much easier for ROS 2 applications to get vehicle information and send         commands. You can find all the details at the following URL:https://docs.px4.io/main/en/middleware/xrce_dds.html
   To setup and start the agent:
   1. Open a terminal
   2. Enter the following commands to fetch and build the agent from source:
