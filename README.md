@@ -64,7 +64,7 @@ We need to install the following tools:
   
   Then install the GAZEBO:
   ```
-  curl -sSL http://get.gazebosim.org | sh
+  sudo apt install gazebo11
   ```
   
   
