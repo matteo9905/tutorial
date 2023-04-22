@@ -79,4 +79,21 @@ We need to install the following tools:
   ```
   
   ### SETUP XRCE-DDS AGENT & CLIENT
- 
+  PX4 uses XRCE-DDS middleware to allow uORB messages to be published and subscribed on a companion computer as though they were ROS 2 topics. This           provides a fast and reliable integration between PX4 and ROS 2, and makes it much easier for ROS 2 applications to get vehicle information and send         commands. You can find all the details at the following URL https://docs.px4.io/main/en/middleware/xrce_dds.html
+  To setup and start the agent:
+  1. Open a terminal
+  2. Enter the following commands to fetch and build the agent from source:
+  ```
+  git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+  cd Micro-XRCE-DDS-Agent
+  mkdir build
+  cd build
+  cmake ..
+  make
+  sudo make install
+  sudo ldconfig /usr/local/lib/
+  ```
+  3. Start the agent with settings for connecting to the XRCE-DDS client running on the simulator:
+   ```
+   MicroXRCEAgent udp4 -p 8888
+   ```
