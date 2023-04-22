@@ -6,7 +6,7 @@ We need to install the following tools:
 * Install PX4-Autopilot firmware
 + Setup XRCE-DDS Agent & Client
 
-### INSTALL ROS2 FOXY
+### INSTALL ROS2 FOXY and GAZEBO
   You can find all the above instruction at this URL https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html 
   ```
 # locale  # check for UTF-8
@@ -61,6 +61,11 @@ We need to install the following tools:
   ros2 run demo_nodes_py listener
   ```
   If these two simple nodes work, it means ROS has been properly installed.
+  
+  Then install the GAZEBO:
+  ```
+  curl -sSL http://get.gazebosim.org | sh
+  ```
   
   
   ### INSTALL PX4-AUTOPILOT FIRMWARE
