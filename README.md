@@ -1,7 +1,7 @@
 # TUTORIAL
 ## PX4 TUTORIAL
-Before starting installing PX4-Autopilot firmware,we need to install ROS2 foxy and gazebo 11(It's suggested to use these versions by the PX4 dev team).
-We need to install the following tools:
+The supported platform for PX4 development is Ubuntu 20.04 (at time of writing), which means that you should use ROS 2 "Foxy".
+To setup ROS 2 for use with PX4 you will need to:
 - Install ROS2 foxy and Gazebo11
 * Install PX4-Autopilot firmware
 + Setup XRCE-DDS Agent & Client
